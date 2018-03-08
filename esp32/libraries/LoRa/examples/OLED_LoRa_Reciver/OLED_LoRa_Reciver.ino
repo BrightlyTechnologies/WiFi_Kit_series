@@ -47,6 +47,7 @@ void logo(){
 }
 
 void loraData(){
+  pinMode(25,OUTPUT);
   display.clear();
   display.setTextAlignment(TEXT_ALIGN_LEFT);
   display.setFont(ArialMT_Plain_10);
