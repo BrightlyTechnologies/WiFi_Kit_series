@@ -54,6 +54,9 @@ void loraData(){
   display.drawStringMaxWidth(0 , 26 , 128, packet);
   display.drawString(0, 0, rssi);  
   display.display();
+  digitalWrite(25, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(250);               // wait for a quarter of a second
+  digitalWrite(25, LOW);    // turn the LED off by making the voltage LOW
 }
 
 void cbk(int packetSize) {
